@@ -1,7 +1,7 @@
 # Static builder for Rust (https://hub.docker.com/r/ekidd/rust-musl-builder/)
 FROM ekidd/rust-musl-builder AS builder
 COPY . /home/rust/src
-CMD cargo build --release
+RUN cargo build --release
 
 # New docker from scratch (minimal sized)
 FROM scratch
