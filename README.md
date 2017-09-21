@@ -2,13 +2,12 @@
 
 <https://tokio.rs/docs/getting-started/simple-server/>
 
-## Build and run with Docker
+## Run with Docker
 
 ```bash
-docker build -t rust-tokio-echo .
-docker run -d -p 12345:12345 rust-tokio-echo
+docker run -d -p 12345:12345 gui77aume/tokio-echo
 ```
 
-## Test with telnet
+## Test with Telnet
 
 Try with `telnet localhost 12345`
